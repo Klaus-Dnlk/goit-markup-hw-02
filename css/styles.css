@@ -4,6 +4,7 @@
   --main-text-color: #757575;
   --main-bg-color: #ffffff;
   --footer-bg-color: #2f303a;
+  --btn-bg-color: #f5f4fa;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
   color: #ffffff;
 }
 
-.hero-btn {
+.hero .button {
   background-color: var(--accent-color);
   color: #ffffff;
   border: none;
@@ -81,12 +82,23 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contact-footer .link:hover {
+.contact-footer .link:hover,
+.contact-footer .link:focus {
   color: var(--main-bg-color);
 }
 
 /* Portfolio button list */
 
+.btn-list .button {
+  background-color: var(--btn-bg-color);
+  border: none;
+}
+
+.btn-list .button:hover,
+.btn-list .button:focus {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
 /* our team section */
 
 /* цвет фона #E5E5E5 */
@@ -102,6 +114,3 @@ body {
 /* цвет оглавлений #212121 */
 
 /* белый #FFFFFF */
-
-/* цвет контактов в футере rgba(255, 255, 255, 0.6)
-   цвет фона футера #2F303A*/ ;
