@@ -1,0 +1,107 @@
+:root {
+  --accent-color: #2196f3;
+  --title-text-color: #212121;
+  --main-text-color: #757575;
+  --main-bg-color: #ffffff;
+  --footer-bg-color: #2f303a;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+/* logo */
+.logo {
+  color: #000000;
+}
+
+.logo .logo-accent {
+  color: var(--accent-color);
+}
+
+/* page nav */
+.list {
+  list-style: none;
+}
+
+.page-nav .link {
+  color: var(--title-text-color);
+}
+
+.link.active {
+  color: var(--accent-color);
+}
+
+.contact-nav .link {
+  color: var(--main-text-color);
+}
+
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero-title {
+  color: #ffffff;
+}
+
+.hero-btn {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+}
+
+/* section Features */
+.title {
+  color: var(--title-text-color);
+}
+
+.link {
+  color: var(--main-text-color);
+}
+
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+
+.address {
+  color: var(--main-bg-color);
+}
+.logo-rev {
+  color: var(--main-bg-color);
+}
+
+.contact-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer .link:hover {
+  color: var(--main-bg-color);
+}
+
+/* Portfolio button list */
+
+/* our team section */
+
+/* цвет фона #E5E5E5 */
+
+/* цвет фона header #FFFFFF */
+
+/* цвет тектса  #757575 */
+
+/* цвет лого #000000, #2196F3 */
+
+/* акцент голубой #2196F3 */
+
+/* цвет оглавлений #212121 */
+
+/* белый #FFFFFF */
+
+/* цвет контактов в футере rgba(255, 255, 255, 0.6)
+   цвет фона футера #2F303A*/ ;
