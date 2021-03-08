@@ -11,6 +11,7 @@ body {
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
 
+  font-family: Roboto;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -181,6 +182,7 @@ body {
 .btn-list .button {
   background-color: var(--btn-bg-color);
   border: none;
+  cursor: pointer;
 
   font-family: Roboto;
   font-style: normal;
