@@ -69,7 +69,10 @@ body {
 
 /* hero */
 .hero-title {
+  /* добавил фон, чтоб бало видно title */
+  background-color: var(--accent-color);
   color: #ffffff;
+
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
