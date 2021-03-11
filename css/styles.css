@@ -43,7 +43,6 @@ body {
 .page-nav .link {
   color: var(--title-text-color);
 
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -56,7 +55,7 @@ body {
 
 .contact-nav .link {
   color: var(--main-text-color);
-  font-family: Roboto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -74,7 +73,6 @@ body {
   background-color: var(--accent-color);
   color: #ffffff;
 
-  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -88,7 +86,6 @@ body {
   color: #ffffff;
   border: none;
 
-  font-family: Roboto;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
@@ -100,7 +97,6 @@ body {
 
 /* section Features */
 .section-title {
-  font-family: Roboto;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
@@ -108,10 +104,21 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Визуально спрятанная section-title */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .feature-title {
   color: var(--title-text-color);
 
-  font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -120,7 +127,7 @@ body {
 }
 .title {
   color: var(--title-text-color);
-  font-family: Roboto;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -137,7 +144,6 @@ body {
 .team-title {
   color: var(--title-text-color);
 
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -152,8 +158,9 @@ body {
 
 .address {
   color: var(--main-bg-color);
-  font-family: Roboto;
+
   font-weight: normal;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -165,7 +172,6 @@ body {
 .contact-footer {
   color: rgba(255, 255, 255, 0.6);
 
-  font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -184,7 +190,6 @@ body {
   border: none;
   cursor: pointer;
 
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -203,7 +208,6 @@ body {
 .work-title {
   color: var(--title-text-color);
 
-  font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -211,7 +215,6 @@ body {
 }
 
 .work-type {
-  font-family: Roboto;
   font-weight: normal;
   font-size: 16px;
   line-height: 31.9;
