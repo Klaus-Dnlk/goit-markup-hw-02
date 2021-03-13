@@ -14,25 +14,27 @@
 <body>
     <!--header, contacts separate from <nav>-->
     <header>
-        <nav>
-            <a href="/" class="logo">
-                <span class="logo-accent">Web</span>Studio
-            </a>
-            <ul class="page-nav list">
-                <li><a href="./index.html" class="link">Студия</a></li>
-                <li><a href="/" class="link active">Портфолио</a></li>
-                <li><a href="" class="link">Контакты</a></li>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <span class="logo-accent">Web</span>Studio
+                </a>
+                <ul class="page-nav list">
+                    <li><a href="./index.html" class="link">Студия</a></li>
+                    <li><a href="" class="link active">Портфолио</a></li>
+                    <li><a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contact-nav list">
+                <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="contact-nav list">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     
     <main>
-        <section class="our-work-section">
-        <h1>наши работы</h1>
+        <section class="our-work-section container">
+        <h1 class="visually-hidden">наши работы</h1>
         <!-- кнопки фильтра -->
             <ul class="btn-list list">    
                 <li>
@@ -125,7 +127,7 @@
 
     <!--footer-->
     <!--footer-->
-    <footer class="footer">
+    <footer class="footer container">
         <a href="/" class="logo">
             <span class="logo-accent">Web</span><span class="logo-rev">Studio</span>
         </a>
