@@ -67,6 +67,7 @@ body {
   margin-right: auto;
   margin-top: 94px;
   padding: 0 15px;
+
   outline: 2px solid tomato;
 }
 
@@ -178,15 +179,16 @@ body {
   margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 200px;
+
+  background-color: var(--footer-bg-color);
 
   text-align: center;
-  
-  outline: 2px solid red;
 }
+
 .hero-title {
-  /* добавил фон, чтоб бало видно title */
-  background-color: var(--accent-color);
   color: #ffffff;
+
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -202,8 +204,6 @@ body {
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*  временный outline */
-  outline: 2px solid red;
 }
 
 .hero .button {
