@@ -26,7 +26,7 @@ h4,
 h5,
 h6,
 p {
-	margin-top: 0;
+	margin: 0;
 }
 
 img {
@@ -65,12 +65,25 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 94px;
   padding: 0 15px;
   outline: 2px solid tomato;
 }
 
 .section-title {
   color: var(--title-text-color);
+}
+
+/* Визуально спрятанная section-title и portfolio */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 
@@ -91,18 +104,17 @@ body {
 }
 
 /* page navigation */
-/* flexing page-nav list */
 
-.header {
+.container.header {
   display: flex;
   height: 80px;
+  margin-top: 0;
   align-items: center;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-  
 }
 
 .main-nav .logo {
@@ -137,13 +149,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-
-
 .contact-nav .link {
   display: block;
   padding-top: 21px;
   padding-bottom: 21px;
-  
+
   color: var(--main-text-color);
 
   font-weight: 500;
@@ -158,18 +168,19 @@ body {
 }
 
 /* hero */
+
 .hero > .container {
   width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
 
   text-align: center;
-  /* background-color: var(--hero-bg-color); */
-
+  
   outline: 2px solid red;
 }
 .hero-title {
@@ -196,6 +207,10 @@ body {
 }
 
 .hero .button {
+
+  margin-right: auto;
+  margin-left: auto;
+
   background-color: var(--accent-color);
   color: #ffffff;
 
@@ -211,13 +226,25 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
-  /* display: flex; */
+  /* display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06em; */
 }
 
 /* section Features */
+
+.container .feature-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-list .item {
+  width: calc((100% - 90px) / 4);
+
+  /* outline: 2px solid teal; */
+}
+
 .section-title {
   margin: 0 0 50px 0;
   font-weight: bold;
@@ -227,30 +254,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.features > .container,
-.works > .container {
-  width: 1170px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
 
-/* Визуально спрятанная section-title и portfolio */
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-.features {
-  margin-bottom: 94px;
-}
 .feature-title {
   margin: 0 0 10px 0;
   color: var(--title-text-color);
@@ -271,15 +275,22 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* our works */
 
+.container.works .list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* our team */
 .team > .container {
-  width: 1170px;
+  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
   padding-left: 215px;
   padding-right: 215px;
+
+  background-color: #F5F4FA;
 }
 .team-title {
   color: var(--title-text-color);
@@ -291,9 +302,34 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container .team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list .item {
+  display: block;
+  width: 270px;
+  height: 368px;
+
+  background-color: var(--main-bg-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .name {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.team-list .name > p {
+  margin-top: 10px;
+}
 /* footer */
 .footer > .container {
   width: 1600px;
+  margin-top: 0;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 215px;
@@ -308,6 +344,11 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.logo.link {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .logo-rev {
   color: var(--main-bg-color);
