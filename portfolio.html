@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdnjs.com/libraries/modern-normalize">
+    <link href="https://cdnjs.com/libraries/modern-normalize" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -14,20 +14,22 @@
 <body>
     <!--header, contacts separate from <nav>-->
     <header>
-        <div class="container">
-            <nav>
+        <div class="container header">
+            <nav class="main-nav">
                 <a href="/" class="logo">
                     <span class="logo-accent">Web</span>Studio
                 </a>
+    
                 <ul class="page-nav list">
-                    <li><a href="./index.html" class="link">Студия</a></li>
-                    <li><a href="" class="link active">Портфолио</a></li>
-                    <li><a href="" class="link">Контакты</a></li>
+                    <li class="item"><a href="" class="link active">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
+    
             <ul class="contact-nav list">
-                <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -125,7 +127,7 @@
 
     </main>
 
-    <!--footer-->
+    
     <!--footer-->
     <footer class="footer container">
         <a href="/" class="logo">

@@ -8,6 +8,33 @@
   --hero-bg-color: #2f303a;
 }
 
+/*  */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
@@ -18,8 +45,20 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section-title {
-  color: var(--title-text-color);
+/* ultilities */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.link.active {
+  color: var(--accent-color);
 }
 
 .container {
@@ -29,7 +68,14 @@ body {
   padding: 0 15px;
   outline: 2px solid tomato;
 }
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+
 /* logo */
+
 .logo {
   color: #000000;
 
@@ -44,14 +90,45 @@ body {
   color: var(--accent-color);
 }
 
-/* page nav */
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* page navigation */
+/* flexing page-nav list */
+
+.header {
+  display: flex;
+  height: 80px;
+  align-items: center;
 }
 
-.page-nav .link {
+.main-nav {
+  display: flex;
+  align-items: center;
+  
+}
+
+.main-nav .logo {
+  margin-right: 93px;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav .item:not(:last-child),
+.contact-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.page-nav  .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;  
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -60,11 +137,13 @@ body {
   letter-spacing: 0.02em;
 }
 
-.link.active {
-  color: var(--accent-color);
-}
+
 
 .contact-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  
   color: var(--main-text-color);
 
   font-weight: 500;
@@ -149,7 +228,7 @@ body {
 }
 
 .features > .container,
-..works > .container {
+.works > .container {
   width: 1170px;
   margin-top: 0;
   margin-left: auto;
@@ -192,10 +271,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.link {
-  color: var(--main-text-color);
-  text-decoration: none;
-}
+
 
 /* our team */
 .team > .container {
